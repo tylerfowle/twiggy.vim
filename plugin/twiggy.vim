@@ -60,6 +60,9 @@ function! Twiggy(reg)
   normal! jjvi{:s/$/': fdp_content_spaces.1,
   normal! vi{:s/^/'
 
+  " add a space between the blocks
+  normal! `ao
+
   " center cursor
   normal! zz
 
