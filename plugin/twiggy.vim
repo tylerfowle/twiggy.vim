@@ -61,7 +61,7 @@ function! Twiggy(reg)
   normal! vi{:s/^/'
 
   " add a space between the blocks
-  normal! `ao
+  normal! `aoma
 
   " center cursor
   normal! zz
