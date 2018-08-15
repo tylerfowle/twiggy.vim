@@ -1,6 +1,9 @@
-"{{{ Twiggy 0.1.0
+"{{{ Twiggy
 "//##############################################################################
 function! Twiggy(reg)
+
+  " incase cursor is on a nonempty line
+  normal! o
 
   " set a mark
   normal! ma
