@@ -33,7 +33,7 @@ function! Twiggy(reg)
   "//##############################################################################
 
   " search for all spaces
-  normal! /\(spaces\.\)\zs\(.*\)\ze\(|raw\)/
+  /\(spaces\.\)\zs\(.*\)\ze\(|raw\)/
   " copy all matches
   let spacehits = []
   %s//\=len(add(spacehits, submatch(0))) ? submatch(0) : ''/gne
@@ -49,7 +49,7 @@ function! Twiggy(reg)
   "//##############################################################################
 
   " set new mark
-  normal ma
+  normal! ma
   " add stuff to cs
   normal! kkvi{:s/$/': fdp_content_spaces.1,
   normal! vi{:s/^/'
